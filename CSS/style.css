@@ -1,0 +1,73 @@
+.whole-page {
+  color: black;
+  background: linear-gradient(to right, rgb(242, 112, 156), rgb(255, 148, 114));
+  margin-top: 3px;
+}
+
+.container {
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 5px;
+  background-image: url("https://images.pexels.com/photos/4207904/pexels-photo-4207904.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-size: cover;
+}
+.card,
+.list-group-item {
+  background: none;
+  border: none;
+  font-family: "Trispace", sans-serif;
+  color: black;
+}
+.btn {
+  background-color: #ec729c;
+  border: none;
+  padding: 5px 20px;
+  font-family: "Trispace", sans-serif;
+}
+.frequent-cities {
+  margin: 20px 20px;
+  margin-top: 2px;
+}
+.btn:hover {
+  background-color: #c54c82;
+}
+.search-bar {
+  width: 500px;
+  padding: 10px;
+}
+.search-results {
+  font-family: "Concert One", cursive;
+  font-size: 30px;
+  padding: 10px;
+}
+h2 {
+  font-size: 25px;
+}
+.city-weather-today {
+  font-family: "Concert One", cursive;
+  font-size: 40px;
+  margin-top: 40px;
+}
+.h-l {
+  font-size: 20px;
+}
+.other-info {
+  font-family: "Concert One", cursive;
+  font-size: 23px;
+  margin-top: 65px;
+}
+.line-break {
+  border-top: 5px solid white;
+}
+.card-title {
+  font-weight: bolder;
+}
+footer {
+  margin: 8px;
+  padding: 10px;
+  font-family: "Concert One", cursive;
+  font-weight: bolder;
+  font-size: 16px;
+}
