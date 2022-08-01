@@ -46,7 +46,6 @@ function showTemp(response) {
 
   //temperature
   let temperature = Math.round(response.data.main.temp);
-  console.log(response);
   let temp = document.querySelector("#temp");
   temp.innerHTML = temperature;
 
@@ -69,6 +68,17 @@ function showTemp(response) {
   let description = response.data.weather[0].description;
   let desc = document.querySelector("#desc");
   desc.innerHTML = description;
+  console.log(response);
+
+  //highs
+  let high = Math.round(response.data.main.temp_max);
+  let highs = document.querySelector("#high");
+  highs.innerHTML = high;
+
+  //lows
+  let low = Math.round(response.data.main.temp_min);
+  let lows = document.querySelector("#low");
+  lows.innerHTML = low;
 }
 
 //London
@@ -77,7 +87,7 @@ function firstButton(event) {
   let city = "London";
   let apiKey = "7387c1649b2acfa22815e197a7100ba0";
   let unit = "metric";
-  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city},${country}&appid=${apiKey}&units=${unit}`;
+  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${unit}`;
   axios.get(apiURL).then(showTemp);
 }
 
