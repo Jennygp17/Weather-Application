@@ -68,7 +68,6 @@ function showTemp(response) {
   let description = response.data.weather[0].description;
   let desc = document.querySelector("#desc");
   desc.innerHTML = description;
-  console.log(response);
 
   //highs
   let high = Math.round(response.data.main.temp_max);
